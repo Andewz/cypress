@@ -1,6 +1,18 @@
 {
-  "devDependencies": {
-    "cypress": "^12.6.0",
-    "typescript": "^4.9.5"
-  }
+  "name": "cypress",
+  "productName": "Cypress",
+  "description": "Cypress is a next generation front end testing tool built for the modern web",
+  "version": "12.6.0",
+  "electronVersion": "21.0.0",
+  "electronNodeVersion": "\r\n16.16.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open":"cypress open",
+    "cypress:runDefault" :"cypress run --spec cypress/initgration/pom/*.spec.js",
+    "cypress:Chrome" : "cypress run --browser chrome --spec cypress/initgration/pom/*.spec.js ",
+    "cypress:Edge" : "cypress run --browser Edge --spec cypress/initgration/pom/*.spec.js ",
+    "cypress:ChromeHeadless" : "cypress run --Headless --browser Chrome --spec cypress/initgration/pom/*.spec.js --record --key 0995e34c-8f32-4f11-acde-71a5e0a9dbfb "
+  },
+  "env": "production"
 }
